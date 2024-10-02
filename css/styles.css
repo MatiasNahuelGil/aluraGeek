@@ -41,6 +41,16 @@
 }
 
 
+/*Seccion agregar productos */
+
+
+.contenedor__formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
 @media (min-width: 876px){
     .header{
        font-size: var(--font-medium);      
