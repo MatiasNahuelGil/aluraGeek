@@ -2,12 +2,9 @@
     padding: 1rem;
     text-align: center;
     font-size: var(--font-normal);
-    background-image: url("../assets/images/fondoEscritorio.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    color: var(--principal-color);
+
 }
+
 
 
 /*Main */
@@ -15,8 +12,8 @@
 .main{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    height: 120vh;
+    height: auto;
+    
 }
 
 /*Seccion de productos*/
@@ -42,6 +39,11 @@
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
     background: linear-gradient(to right, #4286f4, #373B44); 
     border: 1px solid black;
+    
+}
+
+.custom-cursor{
+    cursor: url("../assets/images/fondoMovil.webp"), auto;
 }
 
 .productos__card--imagen{
@@ -80,8 +82,36 @@
     border: 2px solid black;
 }
 
+.contenedor__formulario__botones button{
+    transition: all 0.5s ease;
+}
+
+.contenedor__formulario__botones button:hover{
+    cursor: pointer;
+    background-color: rgb(243, 180, 6);
+}
+
+/*Footer */
+.footer{
+    position: relative;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    
+}
+
 @media (min-width: 876px){
     .header{
        font-size: var(--font-medium);      
+    }
+    .main{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #contenedor__productos{
+        width: 70%;
+    }
+    #contenedor__agregar__productos{
+        width: 30%;
+        padding-right: 1rem;
     }
 }

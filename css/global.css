@@ -17,14 +17,18 @@
 }
 
 body{
-    /* background-image: url("../assets/images/fondoMovil.webp"); 
+    background-image: url("../assets/images/fondoEscritorio.webp");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     background-color: var(--principal-color);
-    /* color: var(--principal-color); */
+    color: var(--principal-color);
     text-align: center;
     list-style: none;
     text-decoration: none;
+}
+
+h2{
+    padding: 1rem;
 }
 
 
