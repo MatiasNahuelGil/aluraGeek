@@ -4,20 +4,40 @@
     font-size: var(--font-normal);
 }
 
+
+/*Main */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 120vh;
+}
+
 /*Seccion de productos*/
+.contenedor__productos{
+    height: 100%;
+}
+
 .contenedor__productos__card{
     display: flex;
     justify-content: center;
 }
 
-.productos__card{
-    height: 15rem;
-    width: 15rem;
-}
+/* .productos__card{
+    padding: 2rem;
+} */
 
 .productos__card--imagen{
-    width: 100%;
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
     object-fit: cover;
+}
+
+.productos__card--precio{
+    display: flex;
+    justify-content: space-around;
 }
 
 
