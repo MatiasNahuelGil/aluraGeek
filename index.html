@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>One Price</title>
+</head>
+<body>
+
+    <!--header-->
+    <header class="header">
+        <h1>MuguiShop</h1>
+    </header>
+
+    <!--main-->
+    <main class="main">
+
+        <!--Seccion de productos-->
+       <section id="contenedor__productos">
+           <h2>Nuestros productos:</h2>
+
+           <!--Contenedor de las card de productos-->
+           <article class="contenedor__productos__card">
+               <div class="productos__card">
+                   <div class="productos__card--head">
+                       <img class="productos__card--imagen" src="./assets/images/fondoMovil.webp" alt="">
+                   </div>
+                   <div class="productos__card--body">
+                       <h4>titulo</h4>
+                       <div>
+                          <b>precio</b>
+                          <i>icono</i>
+                       </div>
+                   </div>
+               </div>
+           </article>
+
+          
+       </section>
+       
+       <!--Seccion para agregar productos-->
+       <section id="contenedor__agregar__productos">
+             <h2>Agregar producto</h2>
+             <form>
+                <li>
+                    <input type="text" placeholder="nombre...">
+                </li>
+                <li>
+                    <input type="text" placeholder="recompensa...">
+                </li>
+                <li>
+                    <input type="text" placeholder="imagen...">
+                </li>
+                <button>Enviar</button>
+                <button>Limpiar</button>
+             </form>
+       </section>
+
+    </main>
+
+    <!--Footer-->
+
+
+    <script src="./js/conexionApi.js"></script>
+</body>
+</html>

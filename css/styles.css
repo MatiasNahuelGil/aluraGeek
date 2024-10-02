@@ -1,0 +1,28 @@
+.header{
+    padding: 1rem;
+    text-align: center;
+    font-size: var(--font-normal);
+}
+
+/*Seccion de productos*/
+.contenedor__productos__card{
+    display: flex;
+    justify-content: center;
+}
+
+.productos__card{
+    height: 15rem;
+    width: 15rem;
+}
+
+.productos__card--imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 876px){
+    .header{
+       font-size: var(--font-medium);      
+    }
+}

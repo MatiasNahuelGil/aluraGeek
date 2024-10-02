@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid white;
+}
+
+
+:root{
+    /*Variables de colores */
+    --principal-color : #ffffff;
+    --secondary-color : #001aff;
+
+    /*Variables de tamaño de fuente */
+    --font-normal : 1.5rem;
+    --font-medium : 2.5rem;
+    --font-large  : 3.5rem;
+}
+
+body{
+    background-image: url("../assets/images/fondoEscritorio.webp"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--principal-color);
+    text-align: center;
+}
+
+
