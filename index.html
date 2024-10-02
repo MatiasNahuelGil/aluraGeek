@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>One Price</title>
 </head>
 <body>
 
     <!--header-->
     <header class="header">
-        <h1>MuguiShop</h1>
+        <h1>MugiTienda</h1>
     </header>
 
     <!--main-->
@@ -35,6 +36,32 @@
                        </div>
                    </div>
                </div>
+
+               <div class="productos__card">
+                <div class="productos__card--head">
+                    <img class="productos__card--imagen" src="./assets/images/fondoMovil.webp" alt="">
+                </div>
+                <div class="productos__card--body">
+                    <h4>titulo</h4>
+                    <div class="productos__card--precio">
+                       <b><i class='bx bx-dollar'></i>recompensa</b>
+                       <i class='bx bxs-trash-alt'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productos__card">
+                <div class="productos__card--head">
+                    <img class="productos__card--imagen" src="./assets/images/fondoMovil.webp" alt="">
+                </div>
+                <div class="productos__card--body">
+                    <h4>titulo</h4>
+                    <div class="productos__card--precio">
+                       <b>precio</b>
+                       <i>icono</i>
+                    </div>
+                </div>
+            </div>
            </article>
 
           
@@ -53,8 +80,11 @@
                 <li class="contenedor__formulario--lista">
                     <input type="text" placeholder="imagen...">
                 </li>
-                <button>Enviar</button>
-                <button>Limpiar</button>
+                <div class="contenedor__formulario__botones">
+                   <button>Enviar</button>
+                   <button>Limpiar</button> 
+                </div>
+                
              </form>
        </section>
 
@@ -62,7 +92,7 @@
 
     <!--Footer-->
 
-
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./js/conexionApi.js"></script>
 </body>
 </html>

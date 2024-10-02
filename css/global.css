@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid white;
 }
 
 
@@ -18,10 +17,11 @@
 }
 
 body{
-    background-image: url("../assets/images/fondoEscritorio.webp"); 
+    /* background-image: url("../assets/images/fondoMovil.webp"); 
     background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--principal-color);
+    background-size: cover; */
+    background-color: var(--principal-color);
+    /* color: var(--principal-color); */
     text-align: center;
     list-style: none;
     text-decoration: none;

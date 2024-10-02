@@ -2,6 +2,11 @@
     padding: 1rem;
     text-align: center;
     font-size: var(--font-normal);
+    background-image: url("../assets/images/fondoEscritorio.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: var(--principal-color);
 }
 
 
@@ -19,14 +24,25 @@
     height: 100%;
 }
 
+.contenedor__productos h2{
+    padding: 1rem;
+}
+
 .contenedor__productos__card{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-/* .productos__card{
-    padding: 2rem;
-} */
+
+.productos__card{
+    color: var(--principal-color);
+    background: #373B44;  
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
+    background: linear-gradient(to right, #4286f4, #373B44); 
+    border: 1px solid black;
+}
 
 .productos__card--imagen{
     width: 15rem;
@@ -38,6 +54,12 @@
 .productos__card--precio{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+}
+
+.productos__card--body h4{
+    padding: 0.5rem;
 }
 
 
@@ -49,6 +71,13 @@
     flex-direction: column;
     margin-top: 1rem;
     gap: 1rem;
+}
+
+
+.contenedor__formulario--lista input, .contenedor__formulario__botones button{
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    border: 2px solid black;
 }
 
 @media (min-width: 876px){
