@@ -30,7 +30,7 @@
 
 .productos__card--imagen{
     width: 15rem;
-    height: 15rem;
+    height: 20rem;
     padding: 1rem;
     object-fit: cover;
 }
