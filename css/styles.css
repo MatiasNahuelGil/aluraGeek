@@ -5,8 +5,6 @@
 
 }
 
-
-
 /*Main */
 
 .main{
@@ -39,31 +37,75 @@
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
     background: linear-gradient(to right, #4286f4, #373B44); 
     border: 1px solid black;
-    
+    transition: border 0.3s ease;
+}
+
+.productos__card:hover{
+    border: 2px solid var(--secondary-color);
 }
 
 .custom-cursor{
     cursor: url("../assets/images/fondoMovil.webp"), auto;
 }
 
+
+
 .productos__card--imagen{
     width: 15rem;
     height: 20rem;
     padding: 1rem;
     object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.productos__card--precio{
+.productos__card--recompensa{
     display: flex;
-    justify-content: space-around;
+    padding: 0.3rem;
+    justify-content: space-between;
     align-items: center;
 
 }
 
+.productos__card--head {
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-effect {
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
 .productos__card--body h4{
+    position: relative;
+    display: inline-block;
     padding: 0.5rem;
 }
 
+.productos__card--body h4::after {
+    content: ''; /* Pseudo-elemento vacío */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Posicionar en la parte inferior del texto */
+    height: 2px; /* Altura del subrayado */
+    width: 100%; /* Ancho igual al del texto */
+    background-color: gold; /* Color dorado */
+    transform: scaleX(0); /* Comienza con un ancho de 0 */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.productos__card--body h4:hover::after {
+    transform: scaleX(1); /* Escalar el subrayado a su tamaño completo */
+}
+
+.cambiar-imagen{
+    cursor: pointer;
+    
+}
+
+.cambiar-imagen:hover{
+   color: var(--secondary-color); 
+}
 
 /*Seccion agregar productos */
 
@@ -88,7 +130,7 @@
 
 .contenedor__formulario__botones button:hover{
     cursor: pointer;
-    background-color: rgb(243, 180, 6);
+    background-color: var(--secondary-color);
 }
 
 /*Footer */
