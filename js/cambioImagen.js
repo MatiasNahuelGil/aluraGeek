@@ -1,5 +1,9 @@
 const pasarPaginaSonido = new Audio('./assets/sounds/pasar-pagina.mp3');
+const eliminarPersonaje = document.querySelectorAll(".borrar-personaje");
 
+eliminarPersonaje.forEach(personaje => personaje.addEventListener("click",()=>{
+   innerHTML = ""
+}))
 
 /*Utilizo un fetch para poder recoger los datos del db.json y creo las card de los personajes dinamicamente */
 fetch('./db.json') 
@@ -20,7 +24,7 @@ fetch('./db.json')
                     <h4>${pirata.nombre}</h4>
                     <div class="productos__card--recompensa">
                         <b class="cambiar-imagen"><i class='bx bx-dollar' ></i>Recompensa  </b>
-                        <i class='bx bxs-trash-alt'></i>
+                        <i class='bx bxs-trash-alt ' id="borrar-personaje"></i>
                     </div>
                 </div>
             `;
