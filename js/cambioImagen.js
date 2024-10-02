@@ -1,3 +1,6 @@
+const pasarPaginaSonido = new Audio('./assets/sounds/pasar-pagina.mp3');
+
+
 /*Utilizo un fetch para poder recoger los datos del db.json y creo las card de los personajes dinamicamente */
 fetch('./db.json') 
     .then(response => response.json())
@@ -16,7 +19,7 @@ fetch('./db.json')
                 <div class="productos__card--body">
                     <h4>${pirata.nombre}</h4>
                     <div class="productos__card--recompensa">
-                        <b class="cambiar-imagen"><i class='bx bx-dollar'></i>Recompensa</b>
+                        <b class="cambiar-imagen"><i class='bx bx-dollar' ></i>Recompensa  </b>
                         <i class='bx bxs-trash-alt'></i>
                     </div>
                 </div>
@@ -30,7 +33,7 @@ fetch('./db.json')
     });
 
     /*Esta función se utiliza para buscar la imagen por id y añadirle el efecto de scroll */
-function addImageChangeEvents(piratas) {
+export default function addImageChangeEvents(piratas) {
     const recompensas = document.querySelectorAll('.cambiar-imagen');
     
     recompensas.forEach(recompensa => {
@@ -48,11 +51,14 @@ function addImageChangeEvents(piratas) {
             setTimeout(() => {
                 if (image.src.includes(pirata.imagen.split('/').pop())) {
                     image.src = pirata.imagenRecompensa; 
+                    pasarPaginaSonido.play();
                 } else {
-                    image.src = pirata.imagen; 
+                    image.src = pirata.imagen;
+                    pasarPaginaSonido.play(); 
                 }
                 image.classList.remove('scroll-effect'); 
             }, 500); 
         });
     });
 }
+
