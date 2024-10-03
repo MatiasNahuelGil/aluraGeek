@@ -45,7 +45,7 @@ fetch('./db.json')
     });
 
     /*Esta función se utiliza para buscar la imagen por id y añadirle el efecto de scroll */
-export default function addImageChangeEvents(piratas) {
+ function addImageChangeEvents(piratas) {
     const recompensas = document.querySelectorAll('.cambiar-imagen');
     
     recompensas.forEach(recompensa => {
