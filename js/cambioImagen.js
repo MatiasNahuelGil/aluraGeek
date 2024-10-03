@@ -29,6 +29,14 @@ fetch('./db.json')
                 </div>
             `;
             cardsContainer.appendChild(card); 
+            const borrarPersonaje = card.querySelector('#borrar-personaje');
+                borrarPersonaje.addEventListener('click', () => {
+                  const confirmarEliminar = confirm(`¿Estás seguro de eliminar a ${pirata.nombre}?`)
+                    if (confirmarEliminar){
+                      cardsContainer.removeChild(card);     
+                    }
+                    
+                });
             } 
         });
 

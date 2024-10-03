@@ -1,5 +1,6 @@
 .header{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     text-align: center;
@@ -8,11 +9,10 @@
 
 .header h1{
     width: 100%;
-  font-size: var(--font-large);  
 }
 
 /*Toogle de musica */
-/* From Uiverse.io by Na3ar-17 */ 
+
 .container {
     display: flex;
     justify-content: center;
@@ -244,7 +244,11 @@
 
 @media (min-width: 876px){
     .header{
-       font-size: var(--font-medium);      
+       font-size: var(--font-medium);     
+    }
+    .header h1{
+      
+      font-size: var(--font-large);  
     }
     .main{
         flex-direction: row;
@@ -256,5 +260,11 @@
     #contenedor__agregar__productos{
         width: 30%;
         padding-right: 1rem;
+    }
+}
+
+@media(min-width: 576px){
+    .header{
+        flex-direction: row;
     }
 }
