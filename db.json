@@ -1,64 +1,58 @@
 {
-   "piratas" : [
+  "piratas": [
     {
-      "id" : 1,
-      "nombre" : "Monkey D. Luffy",
-      "imagen" : "./assets/images/luffy.jpg",
-      "imagenRecompensa" : "./assets/images/recompensas/luffyRecompensa.jpg"
+      "id": "1",
+      "nombre": "Monkey D. Luffy",
+      "imagen": "./assets/images/luffy.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/luffyRecompensa.jpg"
     },
     {
-        "id" : 2,
-        "nombre" : "Roronoa Zoro",
-        "imagen" : "./assets/images/zoro.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/zoroRecompensa.jpg"
+      "id": "2",
+      "nombre": "Roronoa Zoro",
+      "imagen": "./assets/images/zoro.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/zoroRecompensa.jpg"
     },
     {
-        "id" : 3,
-        "nombre" : "Sanji",
-        "imagen" : "./assets/images/sanji.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/sanjiRecompensa.jpg"
+      "id": "3",
+      "nombre": "Sanji",
+      "imagen": "./assets/images/sanji.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/sanjiRecompensa.jpg"
     },
     {
-        "id" : 4,
-        "nombre" : "Jimbe",
-        "imagen" : "./assets/images/jinbe.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/jinbeRecompensa.jpg"
+      "id": "4",
+      "nombre": "Jimbe",
+      "imagen": "./assets/images/jinbe.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/jinbeRecompensa.jpg"
     },
     {
-        "id" : 5,
-        "nombre" : "Robin",
-        "imagen" : "./assets/images/robin.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/robinRecompensa.jpg"
+      "id": "5",
+      "nombre": "Robin",
+      "imagen": "./assets/images/robin.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/robinRecompensa.jpg"
     },
     {
-        "id" : 6,
-        "nombre" : "Franky",
-        "imagen" : "./assets/images/franky.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/frankyRecompensa.jpg"
+      "id": "6",
+      "nombre": "Franky",
+      "imagen": "./assets/images/franky.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/frankyRecompensa.jpg"
     },
     {
-        "id" : 7,
-        "nombre" : "Usopp",
-        "imagen" : "./assets/images/usopp.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/usoppRecompensa.jpg"
+      "id": "14c8",
+      "nombre": "usopp",
+      "imagen": "https://ar.pinterest.com/pin/54958057942725628/",
+      "imagenRecompensa": "https://ar.pinterest.com/pin/16536723626192524/"
     },
     {
-        "id" : 8,
-        "nombre" : "Chopper",
-        "imagen" : "./assets/images/chopper.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/chopperRecompensa.jpg"
+      "id": "8fab",
+      "nombre": "Usopp",
+      "imagen": "./assets/images/usopp.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/usoppRecompensa.jpg"
     },
     {
-        "id" : 9,
-        "nombre" : "Brook",
-        "imagen" : "./assets/images/brook.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/brookRecompensa.jpg"
-    },
-    {
-        "id" : 10,
-        "nombre" : "Nami",
-        "imagen" : "./assets/images/nami.jpg",
-        "imagenRecompensa" : "./assets/images/recompensas/namiRecompensa.jpg"
+      "id": "e207",
+      "nombre": "Nami",
+      "imagen": "./assets/images/nami.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/namiRecompensa.jpg"
     }
-   ]
+  ]
 }

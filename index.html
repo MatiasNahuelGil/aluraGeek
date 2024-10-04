@@ -51,7 +51,7 @@
            <h2>Los más buscados:</h2>
 
            <!--Contenedor de las card de productos-->
-           <article class="contenedor__productos__card">
+           <article class="contenedor__productos__card" data-lista>
               <!--Aqui van las card dinamicamente-->
            </article>
        </section>
@@ -59,19 +59,19 @@
        <!--Seccion para agregar productos-->
        <section id="contenedor__agregar__productos">
              <h2>Agregar pirata</h2>
-             <form class="contenedor__formulario">
+             <form class="contenedor__formulario" data-formulario>
                 <li class="contenedor__formulario--lista">
-                    <input type="text" placeholder="nombre...">
+                    <input type="text" placeholder="nombre..." required   data-nombre>
                 </li>
                 <li class="contenedor__formulario--lista">
-                    <input type="text" placeholder="imagen...">
+                    <input type="text" placeholder="imagen..." required   data-imagen>
                 </li>
                 <li class="contenedor__formulario--lista">
-                    <input type="text" placeholder="imagen recompensa...">
+                    <input type="text" placeholder="imagen recompensa..." required data-imagenRecompensa>
                 </li>
                 <div class="contenedor__formulario__botones">
-                   <button>Enviar</button>
-                   <button>Limpiar</button> 
+                   <button class="formulario__enviar">Enviar</button>
+                   <button class="formulario___limpiar" id="limpiar">Limpiar</button> 
                 </div>
                 
              </form>
@@ -86,8 +86,9 @@
     </footer>
     
 
+    <script src="./js/mostrarRecompensa.js" type="module"></script>
+    <script src="./js/crearRecompensa.js" type="module"></script>
     <script src="./js/musica.js"></script>
-    <script src="./js/cambioImagen.js" type="module"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
 </body>

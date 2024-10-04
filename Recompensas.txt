@@ -1,0 +1,24 @@
+{
+        "id" : 7,
+        "nombre" : "Usopp",
+        "imagen" : "./assets/images/usopp.jpg",
+        "imagenRecompensa" : "./assets/images/recompensas/usoppRecompensa.jpg"
+    },
+    {
+        "id" : 8,
+        "nombre" : "Chopper",
+        "imagen" : "./assets/images/chopper.jpg",
+        "imagenRecompensa" : "./assets/images/recompensas/chopperRecompensa.jpg"
+    },
+    {
+        "id" : 9,
+        "nombre" : "Brook",
+        "imagen" : "./assets/images/brook.jpg",
+        "imagenRecompensa" : "./assets/images/recompensas/brookRecompensa.jpg"
+    },
+    {
+        "id" : 10,
+        "nombre" : "Nami",
+        "imagen" : "./assets/images/nami.jpg",
+        "imagenRecompensa" : "./assets/images/recompensas/namiRecompensa.jpg"
+    }

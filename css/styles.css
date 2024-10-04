@@ -234,6 +234,23 @@
     background-color: var(--secondary-color);
 }
 
+
+/*Mensaje no hay recompensas */
+
+.mensaje__noRecompensa{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+}
+
+
+.mensaje__noRecompensa img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /*Footer */
 .footer{
     position: relative;
@@ -261,10 +278,16 @@
         width: 30%;
         padding-right: 1rem;
     }
+    .mensaje__noRecompensa{
+        width: 800px;
+    }
 }
 
 @media(min-width: 576px){
     .header{
         flex-direction: row;
+    }
+    .mensaje__noRecompensa{
+        width: 500px;
     }
 }
