@@ -35,24 +35,6 @@
       "nombre": "Franky",
       "imagen": "./assets/images/franky.jpg",
       "imagenRecompensa": "./assets/images/recompensas/frankyRecompensa.jpg"
-    },
-    {
-      "id": "14c8",
-      "nombre": "usopp",
-      "imagen": "https://ar.pinterest.com/pin/54958057942725628/",
-      "imagenRecompensa": "https://ar.pinterest.com/pin/16536723626192524/"
-    },
-    {
-      "id": "8fab",
-      "nombre": "Usopp",
-      "imagen": "./assets/images/usopp.jpg",
-      "imagenRecompensa": "./assets/images/recompensas/usoppRecompensa.jpg"
-    },
-    {
-      "id": "e207",
-      "nombre": "Nami",
-      "imagen": "./assets/images/nami.jpg",
-      "imagenRecompensa": "./assets/images/recompensas/namiRecompensa.jpg"
     }
   ]
 }

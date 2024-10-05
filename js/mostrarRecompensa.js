@@ -4,7 +4,7 @@ const lista = document.querySelector("[data-lista]");
 const pasarPaginaSonido = new Audio('./assets/sounds/pasar-pagina.mp3');
 const limpiarRecompensas = document.querySelector("#limpiar");
 
-function crearRecompensa(nombre, imagen, imagenRecompensa) {
+function crearRecompensa(nombre, imagen, imagenRecompensa, id) {
     const recompensa = document.createElement("div");
     recompensa.className = "productos__card";
 
@@ -27,23 +27,25 @@ function crearRecompensa(nombre, imagen, imagenRecompensa) {
         image.classList.add('scroll-effect');
 
         setTimeout(() => {
-            if (image.src.includes(imagen.split('/').pop())) {
-                image.src = imagenRecompensa;
-            } else {
-                image.src = imagen;
-            }
+            image.src = image.src.includes(imagen.split('/').pop()) ? imagenRecompensa : imagen;
             pasarPaginaSonido.play();
             image.classList.remove('scroll-effect');
         }, 500);
     });
 
     const borrarRecompensa = recompensa.querySelector('#borrar-recompensa');
-    borrarRecompensa.addEventListener('click', () => {
+    borrarRecompensa.addEventListener('click', async () => {
         const confirmarEliminar = confirm(`¿Estás seguro de eliminar a ${nombre}?`);
         if (confirmarEliminar) {
-            lista.removeChild(recompensa);
-            if (lista.children.length === 0) {
-                mostrarMensajeNoHayRecompensa(); 
+            try {
+                await conexionApi.eliminarRecompensa(id);
+                lista.removeChild(recompensa);
+                if (lista.children.length === 0) {
+                    mostrarMensajeNoHayRecompensa(); 
+                }
+            } catch (error) {
+                console.error("Error al eliminar la recompensa:", error);
+                alert("No se pudo eliminar la recompensa. Inténtalo de nuevo.");
             }
         }
     });
@@ -52,16 +54,21 @@ function crearRecompensa(nombre, imagen, imagenRecompensa) {
 }
 
 async function listarRecompensas() {
-    const listApi = await conexionApi.listarRecompensas();
-    
-    lista.innerHTML = ""; 
+    try {
+        const listApi = await conexionApi.listarRecompensas();
+        
+        lista.innerHTML = ""; 
 
-    if (listApi.length === 0) {
-        mostrarMensajeNoHayRecompensa();
-    } else {
-        listApi.forEach(recompensa => {
-            lista.appendChild(crearRecompensa(recompensa.nombre, recompensa.imagen, recompensa.imagenRecompensa));
-        });
+        if (listApi.length === 0) {
+            mostrarMensajeNoHayRecompensa();
+        } else {
+            listApi.forEach(recompensa => {
+                lista.appendChild(crearRecompensa(recompensa.nombre, recompensa.imagen, recompensa.imagenRecompensa, recompensa.id));
+            });
+        }
+    } catch (error) {
+        console.error("Error al listar recompensas:", error);
+        alert("Ocurrió un error al cargar las recompensas. Inténtalo de nuevo más tarde.");
     }
 }
 
@@ -75,6 +82,7 @@ function mostrarMensajeNoHayRecompensa() {
     mensaje.className = "mensaje__noRecompensa";
     mensaje.innerHTML = `
         <img class="akainu-enojado" src="./assets/images/akainuEnojado.png"/>
+        <p>No hay recompensas disponibles.</p>
     `;
     
     lista.appendChild(mensaje); 
@@ -87,6 +95,5 @@ limpiarRecompensas.addEventListener('click', () => {
         mostrarMensajeNoHayRecompensa(); 
     }
 });
-
 
 listarRecompensas();

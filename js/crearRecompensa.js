@@ -2,6 +2,10 @@ import { conexionApi } from "./conexionApi.js";
 
 const formulario = document.querySelector("[data-formulario]");
 
+
+/*Funcion crear recompensa : la utilizamos para tomar los valores que nos dan  
+los input de los formularios para luego poder añadir una nueva recompensa a la lista
+*/
 async function crearRecompensa(evento){
     evento.preventDefault();
     const nombre = document.querySelector("[data-nombre]").value;

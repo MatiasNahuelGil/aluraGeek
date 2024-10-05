@@ -1,35 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
 }
 
+:root {
+    /* Variables de colores */
+    --principal-color: #ffffff;
+    --secondary-color: gold;
 
-:root{
-    /*Variables de colores */
-    --principal-color : #ffffff;
-    --secondary-color : gold;
-
-    /*Variables de tamaño de fuente */
-    --font-normal : 1.5rem;
-    --font-medium : 2.5rem;
-    --font-large  : 3.5rem;
+    /* Variables de tamaño de fuente */
+    --font-normal: 1.5rem;
+    --font-medium: 2.5rem;
+    --font-large: 3.5rem;
 }
 
-body{
-    background-image: url("../assets/images/fondoEscritorio.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--principal-color);
+body {
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    
     color: var(--principal-color);
     text-align: center;
     list-style: none;
     text-decoration: none;
 }
 
-h2{
+h2 {
     padding: 1rem;
 }
 
+@media (max-width: 1200px) {
+    /* Estilos específicos para pantallas pequeñas */
+}
 
