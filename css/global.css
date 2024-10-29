@@ -8,6 +8,10 @@
     /* Variables de colores */
     --principal-color: #ffffff;
     --secondary-color: gold;
+    --tertiary-color : #000;
+    --fourth-color   : #0f0c29;
+    --fifth-color    : #302b63;
+    --sixth-color    : #24243e;
 
     /* Variables de tamaño de fuente */
     --font-normal: 1.5rem;
@@ -16,10 +20,9 @@
 }
 
 body {
-    background: #0F2027;  
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-    
+    background: var(--fourth-color);  
+    background: -webkit-linear-gradient(to right, var(--sixth-color), var(--fifth-color), var(--fourth-color));  
+    background: linear-gradient(to right, var(--sixth-color), var(--fifth-color), var(--fourth-color));
     color: var(--principal-color);
     text-align: center;
     list-style: none;
@@ -30,7 +33,5 @@ h2 {
     padding: 1rem;
 }
 
-@media (max-width: 1200px) {
-    /* Estilos específicos para pantallas pequeñas */
-}
+
 

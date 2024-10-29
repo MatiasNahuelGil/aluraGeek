@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate+Inline&family=Jacques+Francois+Shadow&family=Rubik+Wet+Paint&display=swap');
+
 .header {
     display: flex;
     flex-direction: column;
@@ -91,37 +93,35 @@
 }
 
 /* Seccion de recompensas */
-.contenedor__productos {
+.contenedor__recompensas {
     height: 100%;
 }
 
-.contenedor__productos h2 {
+.contenedor__recompensas h2 {
     padding: 1rem;
 }
 
-.contenedor__productos__card {
+.contenedor__recompensas__card {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.productos__card {
+.recompensas__card {
     color: var(--principal-color);
     background: linear-gradient(to right, #4286f4, #373B44);
     border: 1px solid black;
     transition: border 0.3s ease;
 }
 
-.productos__card:hover {
+.recompensas__card:hover {
     border: 2px solid var(--secondary-color);
 }
 
-.custom-cursor {
-    cursor: url("../assets/images/fondoMovil.webp"), auto;
-}
 
-.productos__card--imagen {
+.recompensas__card--imagen {
     width: 15rem;
     height: 20rem;
     padding: 1rem;
@@ -129,14 +129,15 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.productos__card--recompensa {
+.recompensas__card--recompensa {
     display: flex;
     padding: 0.3rem;
     justify-content: space-between;
     align-items: center;
+    
 }
 
-.productos__card--head {
+.recompensas__card--head {
     overflow: hidden;
     position: relative;
 }
@@ -146,13 +147,15 @@
     opacity: 0;
 }
 
-.productos__card--body h4 {
+.recompensas__card--body h4 {
     position: relative;
     display: inline-block;
     padding: 0.5rem;
+    font-size: var(--font-normal);
+    cursor: pointer;
 }
 
-.productos__card--body h4::after {
+.recompensas__card--body h4::after {
     content: '';
     position: absolute;
     left: 0;
@@ -164,17 +167,33 @@
     transition: transform 0.3s ease;
 }
 
-.productos__card--body h4:hover::after {
+.recompensas__card--body h4:hover::after {
     transform: scaleX(1);
 }
 
+
+
 .cambiar-imagen {
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    background: transparent;
+    color: var(--principal-color);
+    cursor: pointer;
+    font-size: var(--font-normal);
+    font-family: "Rubik Wet Paint", system-ui;
+    transition: all ease-in-out 1s;
+}
+
+.cambiar-imagen:hover{
+    color: var(--secondary-color);
+}
+
+#borrar-recompensa{
     cursor: pointer;
 }
 
-.cambiar-imagen:hover {
-    color: var(--secondary-color);
-}
+
 
 /* Seccion agregar productos */
 
@@ -233,10 +252,10 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    #contenedor__productos {
+    #contenedor__recompensas {
         width: 70%;
     }
-    #contenedor__agregar__productos {
+    #contenedor__agregar__recompensas {
         width: 30%;
         padding-right: 1rem;
     }

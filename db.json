@@ -13,12 +13,6 @@
       "imagenRecompensa": "./assets/images/recompensas/zoroRecompensa.jpg"
     },
     {
-      "id": "3",
-      "nombre": "Sanji",
-      "imagen": "./assets/images/sanji.jpg",
-      "imagenRecompensa": "./assets/images/recompensas/sanjiRecompensa.jpg"
-    },
-    {
       "id": "4",
       "nombre": "Jimbe",
       "imagen": "./assets/images/jinbe.jpg",
@@ -35,6 +29,12 @@
       "nombre": "Franky",
       "imagen": "./assets/images/franky.jpg",
       "imagenRecompensa": "./assets/images/recompensas/frankyRecompensa.jpg"
+    },
+    {
+      "id": "0c23",
+      "nombre": "Nami",
+      "imagen": "./assets/images/nami.jpg",
+      "imagenRecompensa": "./assets/images/recompensas/namiRecompensa.jpg"
     }
   ]
 }
